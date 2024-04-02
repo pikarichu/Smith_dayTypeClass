@@ -94,5 +94,7 @@ void dayType::addDays(int nDays)
 dayType::dayType(string start)
 {
 	setDay(start);
+	//previousDay();
+	//nextDay();
 }
 
