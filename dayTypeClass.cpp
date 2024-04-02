@@ -25,5 +25,18 @@ int main()
 
 
 	dayType day;
+	cout << "From default constructor: ";
 	day.print();
-}
+	cout << "Next day: " << day.nextDay() << endl;
+	cout << "Previous Day: " << day.previousDay() << endl;
+	//day.addDays(10);
+
+	dayType monday(dayType::dayOfWeek[1]);
+	cout << "From constructor with parameters: ";
+	monday.print();
+	monday.addDays(3);
+	monday.addDays(30);
+	monday.addDays(365);
+	//cout << monday.nextDay() << endl;
+	//cout << monday.previousDay() << endl;
+} 
