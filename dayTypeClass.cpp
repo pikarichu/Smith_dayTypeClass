@@ -1,4 +1,5 @@
 //dayTypeClass.cpp: This is the unit test
+//
 
 #include <iostream>
 #include <string>
