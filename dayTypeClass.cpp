@@ -6,7 +6,7 @@
 #include "dayType.h"
 using namespace std;
 
-int main()
+/*int main()
 {
 	for (int i = 0; i < 7; i++)
 		cout << dayType::dayOfWeek[i] << " ";
@@ -41,3 +41,4 @@ int main()
 	//cout << monday.nextDay() << endl; //Extra unit testing
 	//cout << monday.previousDay() << endl; //Extra unit testing
 } 
+*/

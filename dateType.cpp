@@ -27,9 +27,7 @@ bool dateType::isLeapYear()
 
 void dateType::setDate(int month, int day, int year)
 {
-	dateType::month = month;
-	dateType::day = day;
-	dateType::year = year;
+
 	if (isLeapYear() == true)
 	{
 		daysInYear = 366;
@@ -40,6 +38,19 @@ void dateType::setDate(int month, int day, int year)
 		daysInYear = 365;
 		daysInMonth[1] = 28;
 	}
+	if (day > daysInMonth[month - 1] || month > 12)
+	{
+		cout << "Provided date is outside of acceptable range." << endl;
+	}
+	else
+	{
+		dateType::month = month;
+		dateType::day = day;
+		dateType::year = year;
+	}
+	//dateType::month = month;
+	//dateType::day = day;
+	//dateType::year = year;
 	//cout << isLeapYear() << endl;
 	//cout << daysInMonth[month - 1] << endl;
 	
@@ -91,6 +102,11 @@ void dateType::futureDate(int nDays)
 		}
 		setDate(month, day, year);
 	}
-	print();
+	//print();
 		
+}
+
+dateType::dateType(int, int, int)
+{
+	setDate(1,1,1900);
 }
